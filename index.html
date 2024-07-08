@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/encriptador.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="div-h1"><h1>Desafio Alura</h1></div> 
+        <div id="div-icon">
+            <a href="https://github.com/kuno9311" target="_blank"><img src="img/icons8-github.svg" alt="" class="icon-git"> </a>
+            <a href="https://www.linkedin.com/in/steban-clavijo-4b6709179/" target="_blank"><img src="img/icons8-linkedin.svg" alt="" class="icon-git"></a>
+        </div>
+        
+    </header>
+    
+    <!-- Main --->
+    <main class="main">
+
+        <!--- Seccion Uno --->
+        <section class="seccion-uno">
+            <div class="div-textArea">
+                <textarea id="textArea" placeholder="Ingresa tu texto aqui" cols="30" rows="10"></textarea>
+            </div>
+            
+            <div class="botones">
+                
+                <button type="button" id="encriptar" onclick="encriptar()"> Encriptar</button>
+                <button type="button" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                <button type="button" id="limpiar" onclick="borrarTexto()">Limpiar</button>
+            </div>
+        </section>
+
+        <!--- Seccion Imagen --->
+        <section class="seccion-imagen">
+            <div class="conten-imagen">
+                <img src="img/hacker-2.png" id="imagen">
+            </div>
+            <div class="parrafo">
+                <h3 id="h3-encontrado">Ningun mensaje fue encontrado</h3>
+                <textarea name="" id="textoDesencriptado" cols="30" rows="10"
+                    placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+                <button type="button" value="boton-copiar" id="boton-copiar" onclick="copy()">Copiar texto</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <h4><a> Codigo por:</a>  <span><a href="https://github.com/kuno9311/Encriptador.git"
+                    target="_blank">Steban Vargas 9311</span></a></h4>
+    </footer>
+
+</body>
+
+</html>
